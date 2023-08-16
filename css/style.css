@@ -112,3 +112,69 @@ header{
     color: var(--primary-color);
     font-size: 3.5rem;
 }
+
+
+
+
+
+/*--------------------RESPONSIVITES-------------*/
+
+@media (max-width:1000px){
+    .logo{
+        width: 8rem;
+        height: 2rem;
+        margin-top: 20px;
+        margin-left: 3rem;
+    }
+    .logo,.log1{
+        font-size: 1.1rem; 
+
+    }
+    .logo,.log2{
+        color: var(--primary-color);
+    }
+    .divsearch{
+        width: 25rem;
+        position: relative;
+    }
+    .recherch{
+        width: 80%;
+        height: 2.4rem;
+        margin-top: 1rem;
+        margin-left: 5rem;
+        
+    }
+    .divsearch img{
+        position: absolute;
+        right: 280px;
+        top: 20px;
+        width: 1.8rem;
+        height: 1.8rem;
+    }
+
+    .btnconnex{
+        width: 8rem;
+        height: 2.2rem;
+        margin-right: 8rem;
+        margin-top: 18px;
+    }
+    .btnconnex a{
+        font-size: 1rem;
+    }
+    
+
+    .cadrebienvenu{
+        width: 20rem;
+        height: 14rem;
+        margin-top: 10rem;
+        margin-left: 6rem;
+        border:  1px solid blue;
+    }
+    .cadrebienvenu .p1{
+        font-size: 2rem;
+    }
+    .cadrebienvenu .p2{
+        font-size: 2.2rem;
+    }
+    
+}
