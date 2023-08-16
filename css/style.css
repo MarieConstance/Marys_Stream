@@ -2,10 +2,9 @@
     --primary-color:#E473FF;
     --second-color:#040415;
     --trois-color:#ffff;
+    
 }
-body{
-    background-color: var(--second-color);
-}
+
 *{
     margin: 0;
     padding: 0;
@@ -13,6 +12,15 @@ body{
     text-decoration: none;
    
 }
+body{
+    background-color: var(--second-color);
+    position: relative;
+}
+
+h2{
+    color: #E473FF;
+}
+
 header{
     width: 100%;
     height: 5rem;
@@ -96,7 +104,7 @@ header{
 
 .cadrebienvenu{
    
-    width: 34rem;
+    width: 36rem;
     height: 20rem;
     color: var(--trois-color);
     position: absolute;
@@ -106,19 +114,135 @@ header{
 }
 .cadrebienvenu .p1{
     color: var(--trois-color);
-    font-size: 3.5rem;
+    font-size: 4rem;
 }
 .cadrebienvenu .p2{
     color: var(--primary-color);
-    font-size: 3.5rem;
+    font-size: 4rem;
 }
 
+.vdeo{
+    margin-top: 12rem;
+    float: right;
+    margin-right: 15rem;
+    width: 50rem;
+    height: 28rem;
+    border-radius: 2rem;
+}
+
+.vdeo iframe{
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+    border: 1px solid var(--primary-color);
+}
+
+.vdeo h2{
+    color: white;
+}
+.lignphoto{
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+    margin-top: 10px;
+}
+.toph{
+    width: 4rem;
+    height: 100%;
+    border-radius: 50%;
+  
+}
+.toph img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5rem;
+}
+.lignphoto h3{
+    color: var(--trois-color);
+    margin-top: 5px;
+    font-size: 1rem;
+    margin-right:50px;
+}
+.btnabonnement{
+    width: 10rem;
+    height: 80%;
+    border: 1px solid var(--primary-color);
+    border-radius: 5rem;
+    background-color: rgba(255, 255, 255, 0.095);
+    color: var(--trois-color);
+    font-size: 15px;
+}
+.btnabonnement:hover{
+    border: 1px solid var(--trois-color);
+    background-color:var(--primary-color);
+}
+.listedesvideos{
+    position: relative;
+    border: 1px solid red;
+    width: 75%;
+    height: 25rem;
+    top: 15rem;
+    margin-left: 15rem;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.listedesvideos h2{
+    position: absolute;
+    left: 1rem;
+    font-size: 2.5rem;
+}
+.cadre{
+    margin-top: 50px;
+    display: flex;
+    
+    width: 50%;
+    height: 80%;
+    border: 1px solid greenyellow;
+}
+.cadredeo{
+    width: 22rem;
+    height: 17rem;
+    border: 1px solid orangered;
+    margin-top: 60px;
+    border-radius: 2rem;
+}
+.cadredeo iframe{
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+    border: 1px solid var(--primary-color);
+}
 
 
 
 
 /*--------------------RESPONSIVITES-------------*/
+@media (max-width:1538px){
 
+    .logo{
+        width: 10rem;
+        height: 2rem;
+        margin-top: 20px;
+        margin-left: 3rem;
+    }
+    .logo,.log1{
+        font-size: 1.5rem; 
+    }
+    .cadrebienvenu{
+        width: 28rem;
+        height: 20rem;
+        margin-top: 12rem;
+        margin-left: 6rem;
+    }
+    .cadrebienvenu .p1{
+        font-size: 3rem;
+    }
+    .cadrebienvenu .p2{
+        font-size: 3rem;
+    }
+}
 @media (max-width:1000px){
     .logo{
         width: 8rem;
@@ -128,11 +252,8 @@ header{
     }
     .logo,.log1{
         font-size: 1.1rem; 
-
     }
-    .logo,.log2{
-        color: var(--primary-color);
-    }
+    
     .divsearch{
         width: 25rem;
         position: relative;
@@ -168,7 +289,7 @@ header{
         height: 14rem;
         margin-top: 10rem;
         margin-left: 6rem;
-        border:  1px solid blue;
+       
     }
     .cadrebienvenu .p1{
         font-size: 2rem;
