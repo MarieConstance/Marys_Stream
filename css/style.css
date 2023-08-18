@@ -179,32 +179,30 @@ header{
 }
 .listedesvideos{
     position: relative;
-    border: 1px solid red;
     width: 75%;
-    height: 25rem;
-    top: 15rem;
+    height: 50rem;
+    top: 12rem;
     margin-left: 15rem;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    margin-bottom: 7rem;
 }
 .listedesvideos h2{
     position: absolute;
     left: 1rem;
     font-size: 2.5rem;
 }
-.cadre{
+/* .cadre{
     margin-top: 50px;
     display: flex;
-    
     width: 50%;
     height: 80%;
     border: 1px solid greenyellow;
-}
+} */
 .cadredeo{
     width: 22rem;
     height: 17rem;
-    border: 1px solid orangered;
     margin-top: 60px;
     border-radius: 2rem;
 }
@@ -214,7 +212,44 @@ header{
     border-radius: 2rem;
     border: 1px solid var(--primary-color);
 }
-
+.cadredeo h3, span{
+    color: var(--trois-color);
+}
+.cadredeo span{
+    margin-top: 4px;
+    margin-left: 4px;
+}
+.lignetitre{
+    display: flex;
+}
+.lignetitre svg{
+    margin-left: 40px;
+}
+.ligneauteur{
+    display: flex;
+}
+.ligneauteur .toph{
+    width: 3.2rem;
+    height: 3rem;
+    border-radius: 50%;
+  
+}
+.ligneauteur .toph img{
+    width: 90%;
+    height: 90%;
+    border-radius: 5rem;
+}
+.ligneauteur h3{
+    color: rgba(255, 255, 255, 0.57);
+    margin-top: 5px;
+    margin-left: 10px;
+}
+footer{
+    width: 100%;
+    height: 15vh;
+    background-color: black;
+    margin-top: 18rem;
+}
 
 
 
@@ -231,7 +266,7 @@ header{
         font-size: 1.5rem; 
     }
     .cadrebienvenu{
-        width: 28rem;
+        width: 24rem;
         height: 20rem;
         margin-top: 12rem;
         margin-left: 6rem;
@@ -242,7 +277,199 @@ header{
     .cadrebienvenu .p2{
         font-size: 3rem;
     }
+    .vdeo{
+        margin-top: 12rem;
+        margin-right: 12rem;
+        width: 45rem;
+        height: 25rem;
+       
+    }
+    .vdeo h2{
+        color: white;
+        font-size: 1.2rem;
+    }
+    .cadredeo{
+        width: 22rem;
+        height: 17rem;
+        margin-top: 60px;
+        border-radius: 2rem;
+        margin-bottom: 2rem;
+    }
+    #liste2{
+        margin-top: 24rem;
+        margin-bottom: 35rem;
+    }
+    
 }
+
+@media (max-width:1400px){
+
+    .logo{
+        width: 10rem;
+        height: 2rem;
+        margin-left: 2rem;
+    }
+    .logo,.log1{
+        font-size: 1.3rem; 
+    }
+    .divsearch{
+        width: 28rem;
+        position: relative;
+    }
+    .recherch{
+        width: 80%;
+        height: 2.4rem;
+        margin-top: 1rem;
+        margin-left: 5rem;
+        
+    }
+    .divsearch img{
+        position: absolute;
+        right: 320px;
+        top: 20px;
+        width: 1.8rem;
+        height: 1.8rem;
+    }
+
+    .btnconnex{
+        width: 8rem;
+        height: 2.2rem;
+        margin-right: 8rem;
+        margin-top: 18px;
+    }
+    .btnconnex a{
+        font-size: 1rem;
+    }
+    .cadrebienvenu{
+        width: 24rem;
+        height: 20rem;
+        margin-top: 14rem;
+        margin-left: 6rem;
+    }
+    .cadrebienvenu .p1{
+        font-size: 2.5rem;
+    }
+    .cadrebienvenu .p2{
+        font-size: 2.5rem;
+    }
+
+    .vdeo{
+        width: 35rem;
+        height: 20rem;
+       
+    }
+    .cadredeo{
+        width: 22rem;
+        height: 17rem;
+        margin-top: 60px;
+        border-radius: 2rem;
+        margin-bottom: 2rem;
+    }
+    .lignphoto{
+        height: 50px;
+        width: 80%;
+        margin-top: 10px;
+    }
+    .toph{
+        width: 3rem;
+        height: 85%;
+        border-radius: 50%;
+      
+    }
+    .toph img{
+        width: 100%;
+        height: 100%;
+        border-radius: 5rem;
+    }
+
+    #liste2{
+        margin-top: 45rem;
+        margin-bottom: 35rem;
+    }
+    footer{
+        margin-top: 58rem;
+    }
+
+}
+
+@media (max-width:1200px){
+
+    .cadrebienvenu{
+        width: 16rem;
+        height: 16rem;
+        margin-top: 14rem;
+        margin-left: 4rem;
+      
+    }
+    .cadrebienvenu .p1{
+        font-size: 2rem;
+    }
+    .cadrebienvenu .p2{
+        font-size: 2rem;
+    }
+
+    .vdeo{
+        width: 30rem;
+        height: 16rem;
+       
+    }
+    .cadredeo{
+        width: 22rem;
+        height: 17rem;
+        margin-top: 60px;
+        border-radius: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .lignphoto{
+        height: 50px;
+        width: 80%;
+        margin-top: 10px;
+    }
+    .toph{
+        width: 2rem;
+        height: 70%; 
+    }
+    .toph img{
+        border-radius: 4rem;
+        height: 80%;
+    }
+    .lignphoto h3{
+        color: var(--trois-color);
+        font-size: .8rem;
+        margin-right:50px;
+    }
+    .btnabonnement{
+        width: 8rem;
+        height: 80%;
+        border: 1px solid var(--primary-color);
+        border-radius: 5rem;
+        background-color: rgba(255, 255, 255, 0.095);
+        color: var(--trois-color);
+        font-size: 12px;
+    }
+    .lignetitre svg{
+        margin-left: 30px;
+    }
+    .ligneauteur .toph{
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+      
+    }
+    .ligneauteur .toph img{
+        width: 90%;
+        height: 90%;
+        border-radius: 5rem;
+    }
+    .ligneauteur h3{
+        color: rgba(255, 255, 255, 0.57);
+        margin-top: 5px;
+        margin-left: 10px;
+    }
+
+}
+
 @media (max-width:1000px){
     .logo{
         width: 8rem;
@@ -272,7 +499,6 @@ header{
         width: 1.8rem;
         height: 1.8rem;
     }
-
     .btnconnex{
         width: 8rem;
         height: 2.2rem;
@@ -281,21 +507,53 @@ header{
     }
     .btnconnex a{
         font-size: 1rem;
-    }
-    
-
+    }   
     .cadrebienvenu{
-        width: 20rem;
+        width: 15rem;
         height: 14rem;
         margin-top: 10rem;
-        margin-left: 6rem;
+        margin-left: 4rem;
        
     }
     .cadrebienvenu .p1{
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
     .cadrebienvenu .p2{
-        font-size: 2.2rem;
+        font-size: 1.8rem;
+    }
+
+    .vdeo{
+        width: 25rem;
+        height: 16rem;
+        margin-top: 10rem;
+    }
+    .cadredeo{
+        width: 18rem;
+        height: 12rem;
+        margin-top: 50px;
+        border-radius: 2rem;
+        margin-bottom: 4rem;
+    }
+    .listedesvideos{
+        width: 75%;
+        height: 50rem;
+        margin-left: 8rem;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-bottom: 10rem;
+    }
+    .listedesvideos h2{
+        position: absolute;
+        left: 1rem;
+        font-size: 2.5rem;
+    }
+    #liste2{
+        margin-top: 32rem;
+        margin-bottom: 35rem;
+    }
+    footer{
+        margin-top: 45rem;
     }
     
 }
