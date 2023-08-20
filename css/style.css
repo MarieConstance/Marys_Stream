@@ -552,8 +552,291 @@ footer{
         margin-top: 32rem;
         margin-bottom: 35rem;
     }
+    .lignetitre{
+        display: flex;
+        width: 85%;
+    }
+    .lignetitre h3{
+        font-size: .8rem;
+    }
+    .lignetitre span{
+        font-size: .6rem;
+        margin-top: 4px;
+    }
+    .lignetitre svg{
+        font-size: .7rem;
+    }
+    .ligneauteur .toph{
+        width: 2rem;
+        height: 1.8rem;
+        border-radius: 60%;
+    }
+    .ligneauteur .toph img{
+        width: 90%;
+        height: 90%;
+        border-radius: rem;
+    }
+    .ligneauteur h3{
+        margin-top: 5px;
+        margin-left: 10px;
+        font-size: 1rem;
+    }
     footer{
         margin-top: 45rem;
     }
     
 }
+@media (max-width:768px){
+    .logo{
+        width: 6rem;
+        margin-left: 2rem;
+    }
+    .logo,.log1{
+        font-size: 1rem; 
+    }      
+    .divsearch{
+        width: 20rem;
+        height: 5px;
+        position: relative;
+    }
+    .recherch{
+        width: 80%;
+        height: 2rem;      
+    }
+    .divsearch img{
+        right: 200px;
+        top: 20px;
+        width: 1.5rem;
+        height: 1.5rem;
+        }
+    .btnconnex{
+        width: 7rem;
+        height: 2rem;
+        margin-right: 4rem;
+        margin-top: 18px;
+    }
+    .btnconnex a{
+        font-size: .8rem;
+    }   
+    .cadrebienvenu{
+        width: 20rem;
+        height: 10rem;
+        margin-top: 6rem;
+        margin-left: 12rem;      
+    }
+    .vdeo{
+        width: 25rem;
+        height: 16rem;
+        margin-top: 16rem;
+    }
+    .lignphoto{
+        height: 50px;
+        width: 80%;
+        margin-top: 10px;
+    }
+    .toph{
+        width: 2.4rem;
+        height: 60%;
+        border-radius: 50%;  
+    }
+    .lignphoto h3 {
+        margin-top: 5px;
+        font-size: .7rem;
+        margin-right:30px;
+    }
+    .btnabonnement{
+        width: 8rem;
+        height: 65%;
+        font-size: 12px;
+    }
+   .cadredeo{
+        width: 16rem;
+        height: 10rem;
+        margin-top: 50px; 
+        margin-right: 2rem;
+    }
+    .listedesvideos{
+        width: 75%;
+        height: 50rem;
+        margin-left: 7rem;
+    }
+    .listedesvideos h2{
+        font-size: 2rem;
+    }    
+    .lignetitre h3{
+        font-size: .7rem;
+    }
+    .lignphoto{
+        height: 50px;
+        width: 80%;
+        margin-top: 10px;
+    }
+    .toph{
+        width: 2rem;
+        height: 50%;
+        border-radius: 50%;  
+    }
+    .lignphoto h3 {
+        margin-top: 5px;
+        font-size: .7rem;
+        margin-right:30px;
+    }
+    .ligneauteur .toph{
+        width: 10%;
+        height: 1.5rem;
+        border-radius: 60%;
+    }
+    .ligneauteur .toph img{
+        width: 90%;
+        height: 80%;
+    }
+    .ligneauteur h3{
+        margin-top: 3px;
+        font-size: .8rem;
+    }
+    #liste2{
+        margin-top: 20rem;
+        margin-bottom: 35rem;
+    }
+    footer{
+        margin-top: 18rem;
+    }
+    
+}
+@media (max-width:450px){
+    .logo{
+        width: 5rem;
+        margin-left: 1rem;
+    }
+    .logo,.log1{
+        font-size: .8rem; 
+    }      
+    .divsearch{
+        overflow: hidden;
+    }
+    .recherch{
+        overflow: hidden;     
+    }
+    
+    .btnconnex{
+        width: 7rem;
+        height: 2rem;
+        margin-right: 4rem;
+        margin-top: 18px;
+        overflow: hidden;
+    }
+    .btnconnex a{
+        font-size: .8rem;
+    }   
+    .cadrebienvenu{
+        width: 20rem;
+        height: 10rem;
+        margin-top: 6rem;
+        margin-left: 4rem;    
+    }
+    .cadrebienvenu .p1,.cadrebienvenu .p2{
+        font-size: 1.5rem;
+    }
+    .vdeo{
+        width: 20rem;
+        height: 14rem;
+        margin-top: 16rem;
+        margin-right: 3rem;
+    }
+    .vdeo h2{
+        font-size: .8rem;
+    }
+    .toph{
+        width: 2rem;
+        height: 50%;
+        border-radius: 50%;  
+    }
+    .lignphoto h3 {
+        margin-top: 5px;
+        font-size: .5rem;
+    }
+    .btnabonnement{
+        width: 5rem;
+        height: 50%;
+        font-size: 12px;
+    }
+    .toph img{
+        border-radius: 4rem;
+        height: 70%;
+        width: 1.5rem;
+    }
+    .listedesvideos{
+        width: 60%;
+        margin-left: 6.5rem;
+        margin-bottom: 30rem;
+        top: 6rem;
+    }
+    .listedesvideos h2{
+        left: 1rem;
+        font-size: 1.5rem;
+    }
+    #liste2{
+        margin-top: 70rem;
+        margin-bottom: 35rem;
+    }
+    footer{
+        margin-top: 100rem;
+    }
+    
+}
+@media (max-width:380px){
+    .cadrebienvenu{
+        width: 16rem;
+        height: 8rem;
+        margin-top: 6rem;
+        margin-left: 3rem; 
+          
+    }
+    .cadrebienvenu .p1,.cadrebienvenu .p2{
+        font-size: 1.3rem;
+    }
+    .vdeo{
+        width: 20rem;
+        height: 14rem;
+        margin-top: 16rem;
+        margin-right: 2rem;
+    }
+
+}
+@media (max-width:320px){
+    .cadrebienvenu{
+        width: 15rem;
+        height: 7rem;
+        margin-left: 2rem;     
+    }
+    .cadrebienvenu .p1,.cadrebienvenu .p2{
+        font-size: 1.2rem;
+    }
+    .vdeo{
+        width: 17rem;
+        height: 11rem;
+        margin-right: 2rem;
+    }
+    .cadredeo{
+        width: 16rem;
+        height: 8rem;
+        margin-top: 50px; 
+        margin-right: 2rem;
+        margin-bottom: 1.2rem;
+    }
+    .listedesvideos{
+        width: 70%;
+        margin-left: 4rem;
+        margin-bottom: 30rem;
+        top: 7rem;
+    }
+    #liste2{
+        margin-top: 55rem;
+        margin-bottom: 35rem;
+    }
+    footer{
+        margin-top: 60rem;
+    }
+
+}
+
