@@ -1,0 +1,176 @@
+:root{
+    --primary-color:#E473FF;
+    --second-color:#040415;
+    --trois-color:#ffff;
+    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Oleo Script', cursive;
+}
+body{
+    background-color: var(--second-color);
+    position: relative;
+}
+
+header{
+    width: 100%;
+    height: 5rem;
+    background-color: var(--second-color);
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.logo{
+    width: 10rem;
+    height: 2rem;
+    margin-top: 20px;
+    margin-left: 5rem;
+}
+.logo,.log1{
+    color: var(--trois-color);
+    font-size: 1.6rem;
+    
+}
+.logo,.log2{
+    color: var(--primary-color);
+}
+nav{
+    width: 26%;
+    margin-left: 10rem; 
+}
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1.3rem;
+}
+nav li a{
+    color: var(--trois-color);
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+nav li a:hover{
+    color: var(--primary-color);
+    border-bottom: 2px dashed var(--trois-color);
+}
+.active{
+    border-bottom: 2px dashed var(--primary-color);
+    color: var(--primary-color);
+}
+.divsearch{   
+   
+    width: 25rem;
+    position: relative;
+}
+.recherch{
+    width: 100%;
+    height: 3rem;
+    border-radius: 1rem;
+    border: 1px solid var(--primary-color);
+    margin-top: 1rem;
+    background-color: rgba(255, 255, 255, 0.166); 
+}
+.recherch:focus{
+    outline: none;
+    color: var(--trois-color);
+    
+ }
+.divsearch img{
+    position: absolute;
+    right: 355px;
+    top: 22px;
+}
+.divsearch,.p{
+   color: var(--trois-color);
+}
+.cadreprofil{
+    width: 15rem;
+    height: 6rem;
+    display: flex;
+}
+.cadreprofil h3{
+    color: var(--trois-color);
+    margin-top: 30px;
+}
+.cadreprofil .profil{
+    width: 4rem;
+    height: 4rem;
+    margin-left: 1.5rem;
+    margin-top: 15px;
+    border-radius: 15px;
+}
+.profil img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+header svg{
+   font-size: 2rem;
+   margin-top: 1.8rem;
+   margin-left: 20rem;
+  
+}
+
+.menu{
+    width: 12rem;
+    height: 35rem;
+    background-color: black;
+    margin-top: 12rem;
+    position: absolute;
+    align-items: center;
+    
+}
+.menu .menu1{
+    width: 90%;
+    height:4rem ;
+    margin-top: 2rem;
+    display: flex;
+    margin-left: auto;
+}
+.menu1 div {
+    width: 18%;
+    height: 2.8rem;
+   
+}    
+.menu1 a{
+    color: var(--trois-color);
+    margin-left: 10px;
+}
+.menu1 a:hover{
+    color: var(--primary-color);
+}
+.menu1 #active{
+    color: var(--primary-color);
+    
+}
+.listedesvideos{
+    width: 80rem;
+    border: 1px solid sandybrown;
+    margin-top: 5rem;
+    position: absolute;
+    margin-left: 30rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.recent{
+    color: var(--primary-color);
+    font-size: 2rem;
+    position: absolute;
+    margin-top: 4rem;
+    margin-left: 12rem;
+    
+}
+.cadredeo{
+    width: 20rem;
+    height: 14rem;
+    margin-top: 60px;
+    border-radius: 2rem;
+    border: 1px solid red;
+    margin-left: 2rem;
+}
