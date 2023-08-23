@@ -156,20 +156,14 @@ header svg{
     
 }
 .listedesvideos{
-    /* width: 80rem;
+    max-width: 80rem;
     margin-top: 10rem;
     position: absolute;
-    margin-left: 30rem;
+    margin-left: 26rem;
     display: flex;
-    
-    justify-content: space-between; */
-    display: flex;
-    width: 100%;
-    max-width: 80rem;
+    justify-content: space-between;
     grid-template-columns: repeat(4,1fr);
     flex-wrap: wrap;
-    margin: 0 auto;
-
 }
 
 .recent{
@@ -180,15 +174,13 @@ header svg{
     
 }
 .cadredeo{
-    /* width: 20rem;
+    width: 20rem;
     height: 14rem;
     margin-top: 6rem;
     border-radius: 2rem;
     border: 1px solid var(--primary-color);
     margin-left: 2rem; 
-    box-shadow: 2px 2px 2px 2px var(--primary-color); */
-    width: 18rem;
-    margin: 5rem;
+    box-shadow: 2px 2px 2px 2px var(--primary-color);  
 }
 .cadredeo:hover{
     transform: scale(1.1);
