@@ -172,9 +172,6 @@ header svg{
 
 }
 
-
-
-
 .recent{
     color: var(--primary-color);
     font-size: 2rem;
@@ -191,7 +188,7 @@ header svg{
     margin-left: 2rem; 
     box-shadow: 2px 2px 2px 2px var(--primary-color); */
     width: 18rem;
-    margin: 1rem;
+    margin: 5rem;
 }
 .cadredeo:hover{
     transform: scale(1.1);
