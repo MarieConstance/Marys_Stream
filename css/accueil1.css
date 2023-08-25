@@ -67,6 +67,9 @@ nav li a:hover{
     width: 24rem;
     position: relative;
 }
+.divsearch input{
+    padding-left: 2.5rem;
+}
 .recherch{
     width: 100%;
     height: 3rem;
@@ -86,6 +89,12 @@ nav li a:hover{
     margin-left: 15rem;
     margin-top: 1.5rem;
  }
+ .notif #burger{
+    display:none;
+}
+input[type="checkbox"]{
+    display: none;
+}
 .divsearch img{
     position: absolute;
     right: 348px;
@@ -122,15 +131,22 @@ header svg{
   
 }
 
+.corpdusite{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .menu{
-    width: 12rem;
+     width:30% ;
+}
+.monmenu{
+    width: auto;
     height: 35rem;
     background-color: black;
     margin-top: 10rem;
     position: fixed;
     align-items: center;
-    position: fixed;
-    
 }
 .menu .menu1{
     width: 90%;
@@ -156,14 +172,14 @@ header svg{
     
 }
 .listedesvideos{
-    max-width: 80rem;
+    width: 70%;
     margin-top: 10rem;
     position: absolute;
-    margin-left: 26rem;
+    margin-left: 23rem;
     display: flex;
     justify-content: space-between;
-    grid-template-columns: repeat(4,1fr);
     flex-wrap: wrap;
+    padding: 10px 10px;
 }
 
 .recent{
@@ -171,7 +187,7 @@ header svg{
     font-size: 2rem;
     position: absolute;
     margin-left: 5rem;
-    
+    white-space: nowrap;
 }
 .cadredeo{
     width: 20rem;
@@ -179,8 +195,9 @@ header svg{
     margin-top: 6rem;
     border-radius: 2rem;
     border: 1px solid var(--primary-color);
-    margin-left: 2rem; 
-    box-shadow: 2px 2px 2px 2px var(--primary-color);  
+    margin-left: 2.3rem; 
+    box-shadow: 2px 2px 2px 2px ;
+    box-shadow: var(--primary-color) 0px 5px 5px, var(--primary-color) 0px -5px 10px, var(--primary-color) 0px 4px 6px, var(--primary-color) 0px 5px 5px,var(--primary-color) 0px -0px 0px;  
 }
 .cadredeo:hover{
     transform: scale(1.1);
@@ -226,8 +243,82 @@ header svg{
     margin-left: 10px;
     font-size: 1rem;
 }
+.pieddepage{
+    background-color: black;
+    width: 100%;
+    height:10vh ;
+    margin-top: 160rem;
+    position: absolute;
+}
+.pieddepage p{
+    text-align: center;
+    font-size: 1rem;
+    color: var(--trois-color);
+    margin-top: 2rem;
+}
 
-@media(max-width:1600px){
+/*------------------------------menu burger----------------------------*/
+
+.menuDeroulant{
+    width: 100%;
+    height: 65vh;
+    background-color: var(--second-color);
+    position: absolute;
+    display: none;
+}
+.menuDeroulant.cadreprofil2{
+ position: absolute;
+ 
+}
+.cadreprofil2{
+    width: 10rem;
+    height: 10rem;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    margin-top: -2rem;
+}
+.cadreprofil2 .profil{
+    width: 60%;
+    height: 6rem;
+    display: flex;
+    margin: auto;
+}
+.cadreprofil2 h3{
+    color: var(--trois-color);
+    margin-top: 10px;
+    position: relative;
+}
+
+.cadreprofil2 img{
+    width: 90%;
+    height: 90%;
+    border-radius: 15px;
+}
+.cadreprofil2 ul {
+   list-style: none;
+   margin-top: 2rem;
+}
+.cadreprofil2 ul a{
+    color: var(--primary-color);
+    line-height: 50px;
+    font-size: 1.2rem;
+}
+.cadreprofil2 ul a:hover{
+    color: var(--trois-color);
+    text-decoration: dashed;
+}
+.divsearch2{   
+    width: 10rem;
+    position: relative;
+    margin-top: 2rem;
+ }
+
+
+/*----------------responsivite------------------------------*/
+
+@media screen and (max-width:1600px){
+
     .logo{
         margin-left: 1rem; 
     }
@@ -238,7 +329,6 @@ header svg{
     nav{
         width: 100rem;
         margin-left: 8rem; 
-        border:1px solid purple ;
     }
     nav ul{
         display: flex;
@@ -251,59 +341,43 @@ header svg{
         font-size: 1rem;
     }
     .divsearch{   
-        width: 60rem;
+        width: 75rem;
         position: relative;
-        /*margin-left: 10rem;*/
-        border: 1px solid red;
+        margin-left: 10rem;
     }
     .recherch{
         height: 2rem;
         margin-top: 1rem;
         border-radius: .6rem;
     }
-    .divsearch img{
-        right: 130px;
-        top: 20px;
-        width: 1.3rem;
-        height: 1.3rem;
-    }
     .notif #cloche{
         font-size: 1.8rem;
      }
     .cadreprofil{
-        width: 30rem;
+        width: 40rem;
         height: 5rem;
-        margin-right: 2rem;
-        border: 1px solid red;
+        margin-right: 2.5rem;
     }
     .cadreprofil h3{
         color: var(--trois-color);
         margin-top: 30px;
         font-size: .6rem;
+       
     }
     .cadreprofil .profil{
-        width: 2.5rem;
-        height: 2rem;
-        margin-left: 1.5rem;
+        width: 3.2rem;
+        height: 2.8rem;
+        margin-left: 1rem;
+        margin-top: 20px;
     }
-    
-    .menu{
-        width: 12rem;
-        height: 32rem;
-        background-color: black;
-        margin-top: 8rem;
-    } 
+
     .listedesvideos{
-        width: 60rem;
-        margin-top: 8rem;
-        margin-left: 13rem;
-    }
-    .recent{
-        color: var(--primary-color);
-        font-size: 2rem;
-        position: absolute;
-        margin-top: .6rem;
-        margin-left: 4rem;    
+        width: 80%;
+        margin-top: 10rem;
+        margin-left: 15rem;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
     }
     .cadredeo{
         width: 18rem;
@@ -311,7 +385,265 @@ header svg{
         margin-top: 6rem;
         border-radius: 2rem;
         margin-left: 1.8rem;
+    }   
+}
+@media screen and(max-width:1300px){
+
+    nav{
+        width: 160rem;
+        margin-left: 8rem; 
+    }
+    nav ul{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 1.3rem;
+    }
+    nav li a{
+        font-size: .8rem;
+    }
+    .divsearch{   
+        width: 150rem;
+        position: relative;
+        margin-left: 10rem;
+    }
+    .recherch{
+        border-radius: .5rem;
+    }
+    .notif #cloche{
+        font-size: 1.5rem;
+     }
+    .cadreprofil{
+        width: 60rem;
+        height: 5rem;
+        margin-right: 2.5rem;
+    }
+    .listedesvideos{
+        margin-top: 10rem;
+        margin-left: 12rem;
+    }
+    .lignetitre h3{
+        font-size: 1rem;
+    }
+    .lignetitre span{
+        margin-top: 5px;
+        font-size: .7rem;
+    }
+    .lignetitre svg{
+        margin-left: 40px;
+        font-size: .8rem;
+    }
+    .ligneauteur .toph{
+        width: 2rem;
+        height: 2rem;
+    }
+    .ligneauteur h3{
+        font-size: .8rem;
+    }
+
+}
+@media screen and (max-width:1240px){
+    .logo{
+        margin-left: 1rem; 
+       
+    }
+    .logo,.log1{
+        font-size: .8rem;   
+    }
+    nav{
+        width: 250rem;
+        margin-left: 8rem; 
+    }
+    nav ul{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 1.3rem;
+    }
+    nav li a{
+        font-size: .8rem;
+    }
+    .divsearch{   
+        width: 200rem;
+        position: relative;
+        margin-left: 8rem;
+    }
+    .recherch{
+        border-radius: .5rem;
+    }
+    .notif #cloche{
+        font-size: 1.5rem;
+        margin-left: 2rem;
+     }
+    .cadreprofil{
+        width: 60rem;
+        height: 5rem;
+        margin-right: 2.5rem;
+    }
+    .listedesvideos{
+        margin-top: 10rem;
+        margin-left: 12rem;
+    }
+    .lignetitre h3{
+        font-size: 1rem;
+    }
+    .lignetitre span{
+        margin-top: 5px;
+        font-size: .7rem;
+    }
+    .lignetitre svg{
+        margin-left: 40px;
+        font-size: .8rem;
+    }
+    .ligneauteur .toph{
+        width: 2rem;
+        height: 2rem;
+    }
+    .ligneauteur h3{
+        font-size: .8rem;
+    }
+}
+@media screen and (min-width:768px) and (max-width:1024px){
+    .logo,.log1{
+        font-size: .8rem;   
+    }
+    nav{
+        width: 400rem;
+        margin-left: 6rem; 
+    }
+    nav ul{
+        justify-content: space-between;
+    }
+    nav li a{
+        font-size: .7rem;
+    }
+    .divsearch{   
+        width: 200rem;
+        position: relative;
+        margin-left: 5rem;
+        margin-top: .2rem;
+    }
+    .recherch{
+        border-radius: .5rem;
+        height: 1.6rem;
+    }
+    .notif #cloche{
+        font-size: 1rem;
+        margin-left: 2rem;
+    }
+    .notif #burger{
+        font-size: 1rem;
+        margin-left: 2rem;
+        color: var(--primary-color);
+    }
+    .cadreprofil{
+        width: 30rem;
+        height: 5rem;
+        margin-right: 1rem;
+    }
+    .cadreprofil .profil{
+        width: 2.2rem;
+        height: 1.8rem;
+        margin-top: 25px;
+        border-radius: 2px;
+    }
+    .listedesvideos{
+        margin-top: 8rem;
+        margin-left: 10rem;
+    }
+}
+@media screen and (max-width:768px){
+    nav{
+        margin-left: 4rem; 
+    }
+    nav ul{
+        justify-content: space-between;
+        margin-top: 1rem;
+    }
+    .divsearch{   
+        width: 200rem;
+        position: relative;
+        margin-left: 5rem;
+        margin-top: .2rem;
+    }
+    .notif #cloche{
+        font-size: 1rem;
+        margin-left: 2rem;
+    }
+    .cadreprofil{
+        width: 30rem;
+        height: 5rem;
+        margin-right: 1rem;
+    }
+    .cadreprofil .profil{
+        width: 2.2rem;
+        height: 1.8rem;
+        margin-top: 25px;
+        border-radius: 2px;
+    }
+    .listedesvideos{
+        width: 70%;
+        margin-top: 8rem;
+        margin-left: 15rem;
+    }
+}
+/* 
+@media screen  and (max-width:768px){
+    header{
+        position: absolute;
+        
+    }
+    .cadreprofil {
+        margin-right: 10rem;
     }
     
+    nav ul{
+        display: none;
+        flex-direction: column;
+        background-color: aqua; 
+    }
+    nav li {
+        gap: 2px;
+        margin-left: 5px;     
+    }  
+    .notif #burger{
+        display: block;
+        margin-left: -5rem;
+        font-size: 3rem;
+        margin-top: 1rem;
+    } 
     
+} */
+@media screen and (max-width:425px){
+    header{
+        position: relative;
+    }
+    .corpdusite{
+        display: block;
+    }
+    .monmenu{
+        position: relative;
+        width: 10rem;
+        height: 30rem;
+        margin-top: 4rem;
+       
+    }
+
+    input[type="checkbox"]:checked ~ ul{
+        display: block;
+    } 
+    .notif #burger{
+        display: block;
+        margin-left: -15rem;
+        font-size: 3rem;
+        margin-top: 1rem;
+        color: var(--trois-color);
+    } 
+    nav ul,.divsearch,.notif #cloche, .cadreprofil {
+        display: none;
+    }
+
+    .listedesvideos{
+        margin-top: 2rem;
+        margin-left: 3rem;
+    }
 }
+

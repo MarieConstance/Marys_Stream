@@ -212,7 +212,6 @@ body{
 }
 @media(max-width:425px){
     .prepartir{
-        border: 1px solid red;
         position: relative;
         height: 50vh;
         width: 100%;
