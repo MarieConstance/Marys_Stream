@@ -28,6 +28,7 @@ header{
     position: fixed;
     display: flex;
     justify-content: space-between;
+    z-index: 1;
     
 }
 .logo{
@@ -67,18 +68,6 @@ header{
 .divsearch,.p{
    color: var(--trois-color);
 }
-
-/* .logsearch{
-    margin-left: 0px;
-    display: flex;
-    width: 15rem;
-  
-    height: 2rem;mar
-}
-.logsearch,.p{
-  color: var(--trois-color);
-  font-size: 20px;
-} */
 
 .btnconnex{
     width: 12rem;
@@ -193,13 +182,7 @@ header{
     left: 1rem;
     font-size: 2.5rem;
 }
-/* .cadre{
-    margin-top: 50px;
-    display: flex;
-    width: 50%;
-    height: 80%;
-    border: 1px solid greenyellow;
-} */
+
 .cadredeo{
     width: 22rem;
     height: 17rem;
@@ -244,13 +227,22 @@ header{
     margin-top: 5px;
     margin-left: 10px;
 }
-footer{
+.pieddepage{
     width: 100%;
-    height: 15vh;
+    height: 10vh;
     background-color: black;
-    margin-top: 18rem;
+    margin-top: 10rem;
+    position: absolute;
+}    
+.pieddepage p{
+    text-align: center;
+    font-size: 1rem;
+    color: var(--trois-color);
+    margin-top: 2rem;
 }
-
+.pieddepage span{
+    color: var(--primary-color);
+}
 
 
 /*--------------------RESPONSIVITES-------------*/
@@ -298,6 +290,9 @@ footer{
     #liste2{
         margin-top: 24rem;
         margin-bottom: 35rem;
+    }
+    .listedesvideos{
+        height: auto;
     }
     
 }
@@ -536,7 +531,7 @@ footer{
     }
     .listedesvideos{
         width: 75%;
-        height: 50rem;
+        height: auto;
         margin-left: 8rem;
         display: flex;
         justify-content: space-around;
@@ -581,9 +576,9 @@ footer{
         margin-left: 10px;
         font-size: 1rem;
     }
-    footer{
+    /* footer{
         margin-top: 45rem;
-    }
+    } */
     
 }
 @media (max-width:768px){
@@ -657,6 +652,7 @@ footer{
     }
     .listedesvideos{
         width: 75%;
+        height: auto;
         height: 50rem;
         margin-left: 7rem;
     }
@@ -698,9 +694,9 @@ footer{
         margin-top: 20rem;
         margin-bottom: 35rem;
     }
-    footer{
+    /* footer{
         margin-top: 18rem;
-    }
+    } */
     
 }
 @media (max-width:450px){
@@ -767,6 +763,7 @@ footer{
     }
     .listedesvideos{
         width: 60%;
+        height: auto;
         margin-left: 6.5rem;
         margin-bottom: 30rem;
         top: 6rem;
@@ -779,9 +776,9 @@ footer{
         margin-top: 70rem;
         margin-bottom: 35rem;
     }
-    footer{
-        margin-top: 100rem;
-    }
+    /* footer{
+        
+    } */
     
 }
 @media (max-width:380px){

@@ -89,11 +89,18 @@ nav li a:hover{
     margin-left: 15rem;
     margin-top: 1.5rem;
  }
- .notif #burger{
-    display:none;
+ .menuDeroulant.notifburger{
+    display:block;
+    color: var(--primary-color);
+    position:absolute;
+    margin-left: -50rem;
+}
+.notifburger{
+    display: none;
+    font-size: 40px;
 }
 input[type="checkbox"]{
-    display: none;
+    display:none;
 }
 .divsearch img{
     position: absolute;
@@ -265,6 +272,7 @@ header svg{
     background-color: var(--second-color);
     position: absolute;
     display: none;
+    margin-top: 100px;
 }
 .menuDeroulant.cadreprofil2{
  position: absolute;
@@ -529,11 +537,11 @@ header svg{
         font-size: 1rem;
         margin-left: 2rem;
     }
-    .notif #burger{
+    /* .notif #burger{
         font-size: 1rem;
         margin-left: 2rem;
         color: var(--primary-color);
-    }
+    } */
     .cadreprofil{
         width: 30rem;
         height: 5rem;
@@ -585,33 +593,7 @@ header svg{
         margin-left: 15rem;
     }
 }
-/* 
-@media screen  and (max-width:768px){
-    header{
-        position: absolute;
-        
-    }
-    .cadreprofil {
-        margin-right: 10rem;
-    }
-    
-    nav ul{
-        display: none;
-        flex-direction: column;
-        background-color: aqua; 
-    }
-    nav li {
-        gap: 2px;
-        margin-left: 5px;     
-    }  
-    .notif #burger{
-        display: block;
-        margin-left: -5rem;
-        font-size: 3rem;
-        margin-top: 1rem;
-    } 
-    
-} */
+
 @media screen and (max-width:425px){
     header{
         position: relative;
@@ -627,23 +609,31 @@ header svg{
        
     }
 
-    input[type="checkbox"]:checked ~ ul{
+    input[type="checkbox"]:checked ~ .menuDeroulant{
         display: block;
     } 
     .notif #burger{
         display: block;
-        margin-left: -15rem;
+        margin-right: -15rem;
         font-size: 3rem;
         margin-top: 1rem;
-        color: var(--trois-color);
+        color: var(--primary-color);
     } 
     nav ul,.divsearch,.notif #cloche, .cadreprofil {
         display: none;
+    }
+    .notif{
+        display: block;
     }
 
     .listedesvideos{
         margin-top: 2rem;
         margin-left: 3rem;
     }
+    
+    .notifburger {
+        display: block;
+    }
+   
 }
 
