@@ -149,7 +149,7 @@ header svg{
 }
 .monmenu{
     width: auto;
-    height: 35rem;
+    height: 30rem;
     background-color: black;
     margin-top: 10rem;
     position: fixed;
@@ -158,7 +158,7 @@ header svg{
 .menu .menu1{
     width: 90%;
     height:4rem ;
-    margin-top: 2rem;
+    margin-top: 3rem;
     display: flex;
     margin-left: auto;
 }
@@ -179,14 +179,15 @@ header svg{
     
 }
 .listedesvideos{
-    width: 70%;
+    width: 80%;
+    height: auto;
     margin-top: 10rem;
     position: absolute;
-    margin-left: 23rem;
+    margin-left: 18rem;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 10px 10px;
+    padding: 10px 10px;  
 }
 
 .recent{
@@ -203,7 +204,6 @@ header svg{
     border-radius: 2rem;
     border: 1px solid var(--primary-color);
     margin-left: 2.3rem; 
-    box-shadow: 2px 2px 2px 2px ;
     box-shadow: var(--primary-color) 0px 5px 5px, var(--primary-color) 0px -5px 10px, var(--primary-color) 0px 4px 6px, var(--primary-color) 0px 5px 5px,var(--primary-color) 0px -0px 0px;  
 }
 .cadredeo:hover{
@@ -254,7 +254,7 @@ header svg{
     background-color: black;
     width: 100%;
     height:10vh ;
-    margin-top: 160rem;
+    margin-top: 145rem;
     position: absolute;
 }
 .pieddepage p{
@@ -537,11 +537,6 @@ header svg{
         font-size: 1rem;
         margin-left: 2rem;
     }
-    /* .notif #burger{
-        font-size: 1rem;
-        margin-left: 2rem;
-        color: var(--primary-color);
-    } */
     .cadreprofil{
         width: 30rem;
         height: 5rem;
@@ -556,7 +551,14 @@ header svg{
     .listedesvideos{
         margin-top: 8rem;
         margin-left: 10rem;
+        
     }
+    .cadredeo{
+        width: 15rem;
+        height: 10rem;
+        margin-left: 1rem; 
+    } 
+
 }
 @media screen and (max-width:768px){
     nav{
@@ -588,9 +590,20 @@ header svg{
         border-radius: 2px;
     }
     .listedesvideos{
-        width: 70%;
-        margin-top: 8rem;
-        margin-left: 15rem;
+        width: 75%;
+        margin-top: 6rem;
+        margin-left: 10rem;
+    }
+    .cadredeo{
+        width: 16rem;
+        height: 10rem;
+        margin-left: 1rem; 
+    } 
+    .recent{
+        font-size: 1.5rem;
+        position: absolute;
+        margin-left: 2rem;
+        white-space: nowrap;
     }
 }
 
@@ -607,6 +620,12 @@ header svg{
         height: 30rem;
         margin-top: 4rem;
        
+    }
+    .recent{
+        font-size: 1.8rem;
+        position: absolute;
+        margin-left: 2rem;
+        white-space: nowrap;
     }
 
     input[type="checkbox"]:checked ~ .menuDeroulant{
@@ -628,9 +647,14 @@ header svg{
 
     .listedesvideos{
         margin-top: 2rem;
-        margin-left: 3rem;
+        margin-left: 2rem;
+        width: 85%;
     }
-    
+    .cadredeo{
+        width: 20rem;
+        height: 13rem;
+        margin-left: 1rem; 
+    } 
     .notifburger {
         display: block;
     }

@@ -117,6 +117,7 @@ header{
     width: 50rem;
     height: 28rem;
     border-radius: 2rem;
+    box-shadow: var(--primary-color) 0px 5px 5px, var(--primary-color) 0px -5px 10px, var(--primary-color) 0px 4px 6px, var(--primary-color) 0px 5px 5px,var(--primary-color) 0px -0px 0px;  
 }
 
 .vdeo iframe{
@@ -168,7 +169,7 @@ header{
 }
 .listedesvideos{
     position: relative;
-    width: 75%;
+    width: 80%;
     height: 50rem;
     top: 12rem;
     margin-left: 15rem;
@@ -188,6 +189,11 @@ header{
     height: 17rem;
     margin-top: 60px;
     border-radius: 2rem;
+    box-shadow: var(--primary-color) 0px 5px 5px, var(--primary-color) 0px -5px 10px, var(--primary-color) 0px 4px 6px, var(--primary-color) 0px 5px 5px,var(--primary-color) 0px -0px 0px;  
+}
+.cadredeo:hover{
+    transform: scale(1.1);
+    box-shadow: 2px 2px 2px 2px var(--trois-color);
 }
 .cadredeo iframe{
     width: 100%;
