@@ -152,7 +152,7 @@ header svg{
     width: auto;
     height: 30rem;
     background-color: black;
-    margin-top: 10rem;
+    margin-top: 8rem;
     position: fixed;
     align-items: center;
 }
@@ -165,8 +165,7 @@ header svg{
 }
 .menu1 div {
     width: 18%;
-    height: 2.8rem;
-   
+    height: 2.5rem;
 }    
 .menu1 a{
     color: var(--trois-color);
@@ -220,9 +219,7 @@ header svg{
     display: flex;
     margin-top: 1rem;
 }
-.lignetitre h3{
-    color: var(--trois-color);
-}
+
 .lignetitre span{
     color: var(--primary-color);
     margin-left: 5px;
@@ -332,35 +329,39 @@ header svg{
         margin-left: 1rem; 
     }
     .logo,.log1{
-        font-size: 1rem;
+        font-size: .8rem;
         
     }
     nav{
-        width: 100rem;
-        margin-left: 8rem; 
+        width: 250rem;
+        margin-left: 6rem; 
     }
     nav ul{
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         margin-top: 1.3rem;
     }
     nav li a{
         color: var(--trois-color);
         text-decoration: none;
-        font-size: 1rem;
+        font-size: .8rem;
     }
     .divsearch{   
-        width: 75rem;
+        width: 250rem;
         position: relative;
-        margin-left: 10rem;
+        margin-left: 10rem;   
     }
     .recherch{
         height: 2rem;
         margin-top: 1rem;
-        border-radius: .6rem;
+        border-radius: .6rem;  
     }
     .notif #cloche{
-        font-size: 1.8rem;
+        font-size: 1.5rem;
+        margin-right: 2rem;
+        width: 2rem;
+        
+        
      }
     .cadreprofil{
         width: 40rem;
@@ -383,7 +384,7 @@ header svg{
     .listedesvideos{
         width: 80%;
         margin-top: 10rem;
-        margin-left: 15rem;
+        margin-left: 13rem;
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
@@ -394,12 +395,17 @@ header svg{
         margin-top: 6rem;
         border-radius: 2rem;
         margin-left: 1.8rem;
-    }   
+    } 
+    .lignetitre h3{
+        color: var(--trois-color);
+        font-size: 1rem;
+    } 
+    
 }
 @media screen and(max-width:1300px){
 
     nav{
-        width: 160rem;
+        width: 180rem;
         margin-left: 8rem; 
     }
     nav ul{
@@ -413,14 +419,15 @@ header svg{
     .divsearch{   
         width: 150rem;
         position: relative;
-        margin-left: 10rem;
+        margin-left: 15rem;
+
     }
     .recherch{
         border-radius: .5rem;
     }
     .notif #cloche{
-        font-size: 1.5rem;
-     }
+        font-size: 1.5rem; 
+    }
     .cadreprofil{
         width: 60rem;
         height: 5rem;
@@ -607,7 +614,7 @@ header svg{
     }
 }
 
-@media screen and (max-width:425px){
+@media screen and (max-width:426px){
     header{
         position: relative;
     }
