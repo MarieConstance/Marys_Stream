@@ -23,6 +23,7 @@ body{
     width: 50rem;
     height:auto;
     margin-top: 2rem;
+    margin-left: 40rem;
 }
 .notif{
     width: 90%;
@@ -39,3 +40,12 @@ body{
     margin-top: 10px;
     font-size: 1.2rem;
 }
+.cadrecroix{
+    margin-left: auto;
+    margin-top: -16rem;
+}
+.cadrecroix span{
+    color: var(--primary-color);
+    font-size: 2rem;
+}
+ 

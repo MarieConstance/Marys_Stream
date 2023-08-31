@@ -261,6 +261,10 @@ header svg{
     color: var(--trois-color);
     margin-top: 2rem;
 }
+.pieddepage span{
+    color: var(--primary-color);
+}
+
 
 /*------------------------------menu burger----------------------------*/
 
