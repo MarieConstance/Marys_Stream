@@ -1,0 +1,41 @@
+:root{
+    --primary-color:#E473FF;
+    --second-color:#040415;
+    --trois-color:#ffff;
+    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Oleo Script', cursive;
+}
+body{
+    background-color: var(--second-color);
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    
+}
+.cadrenotif{
+    width: 50rem;
+    height:auto;
+    margin-top: 2rem;
+}
+.notif{
+    width: 90%;
+    height: 5rem;
+    border: 1px solid var(--primary-color);
+    margin: auto;
+    margin-top: 2rem;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.068);
+    text-align: center;
+}
+.notif P{
+    color: var(--trois-color);
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
