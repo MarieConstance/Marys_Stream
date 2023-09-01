@@ -49,3 +49,14 @@ body{
     font-size: 2rem;
 }
  
+
+/*--------------------responsivite------------------*/
+
+@media screen and (max-width:1440px) {
+    .cadrenotif{
+        width: 50rem;
+        height:auto;
+        margin-top: 2rem;
+       margin: auto;
+    }
+}
