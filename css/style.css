@@ -85,7 +85,6 @@ header{
 .btnconnex:hover{
     border: 1px solid var(--trois-color);
     border-radius: 2rem;
-    margin-top: 10px;
     margin-right: 8rem;
     background-color:var(--primary-color);
 }
@@ -286,19 +285,27 @@ header{
         color: white;
         font-size: 1.2rem;
     }
+
+    #liste2{
+        margin-top: 1rem;
+        margin-bottom: 35rem;
+       
+    }
+    .listedesvideos{
+        width: 90%;
+        height: auto;
+        top: 12rem;
+        margin-left: 5rem;
+        margin-bottom: 1rem;
+      
+    }
     .cadredeo{
-        width: 22rem;
+        width: 15rem;
         height: 17rem;
         margin-top: 60px;
         border-radius: 2rem;
         margin-bottom: 2rem;
-    }
-    #liste2{
-        margin-top: 24rem;
-        margin-bottom: 35rem;
-    }
-    .listedesvideos{
-        height: auto;
+       
     }
     
 }
@@ -360,11 +367,12 @@ header{
        
     }
     .cadredeo{
-        width: 22rem;
-        height: 17rem;
+        width: 15rem;
+        height: 12rem;
         margin-top: 60px;
         border-radius: 2rem;
         margin-bottom: 2rem;
+        
     }
     .lignphoto{
         height: 50px;
@@ -384,11 +392,11 @@ header{
     }
 
     #liste2{
-        margin-top: 45rem;
-        margin-bottom: 35rem;
+        margin-top: 10rem;
+        margin-bottom: 7rem;
     }
     footer{
-        margin-top: 58rem;
+        margin-top: 8rem;
     }
 
 }
